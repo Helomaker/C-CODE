@@ -184,3 +184,164 @@ static 修饰的全局变量，使得这个全局变量只能在自己所在的�
 结构体，及其指针
 
 ![image-20230215112706036](C:\Users\houqi\AppData\Roaming\Typora\typora-user-images\image-20230215112706036.png)
+
+
+
+
+
+## 2月15日
+
+
+
+```c
+#include <stdio.h>
+#include <string.h>
+
+int main()
+{
+    char arr[] = { 'b' , 'i' , 't' };
+    printf("%d\n", strlen(arr));
+    return 0;
+}
+
+
+```
+
+### 语句
+
+分号；隔开的就叫语句
+
+#### 分支语句
+
+##### if
+
+语法结构
+
+```c
+if（表达式）
+	语句；
+
+
+
+if（表达式）
+	语句1；
+else
+	语句2；
+
+
+
+//多分支
+if（表达式1）
+	语句1；
+else if（表达式2）
+	语句2；
+else
+	语句3；
+```
+
+课堂演示代码：
+
+```c
+#include <stdio.h>
+int main()
+{
+    int age = 20;
+    if (age < 18)
+    {
+        printf("未成年\n")
+        printf("不能谈恋爱\n")；   
+    }
+        
+    else if (age >= 18 && age < 26)
+    {
+        printf("青年\n");
+    }
+   else if (age >= 26 && age < 40)
+    {
+        printf("中年\n")；
+    }
+    else//不是必须有
+        printf("老年\n")；
+    return 0;
+}
+```
+
+
+
+错误的例子：else和距离它最近的 if 匹配
+
+![image-20230215160739165](C:\Users\houqi\AppData\Roaming\Typora\typora-user-images\image-20230215160739165.png)
+
+
+
+##### switch
+
+![image-20230215171600328](C:\Users\houqi\AppData\Roaming\Typora\typora-user-images\image-20230215171600328.png)
+
+```c
+#include<stdio.h>
+int main()
+{
+	int day = 0;
+	scanf("%d", &day);
+	switch (day)
+	{
+	case 1:
+		printf("星期一\n");
+		break;
+	case 2:
+		printf("星期二\n");
+		break;
+	case 3:
+		printf("星期三\n");
+		break;
+	case 4:
+		printf("星期四\n");
+		break;
+	case 5:
+		printf("星期五\n");
+		break;
+	case 6:
+		printf("星期六\n");
+		break;
+	case 7:
+		printf("星期日\n");
+    default:
+		printf("输入错误\n");
+		break;
+	}
+	return 0;
+
+}
+```
+
+
+
+
+
+#### 循环语句
+
+##### while循环
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
