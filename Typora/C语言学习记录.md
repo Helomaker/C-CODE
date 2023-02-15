@@ -2,6 +2,8 @@
 
 ### 2月13日学习记录
 
+
+
 ```c
 #include<stdio.h>
 int Add(int x, int y)
@@ -132,3 +134,53 @@ sizeof   计算的是数组的总大小，单位是字节
 ###### register
 
 ![image-20230215081612382](C:\Users\houqi\AppData\Roaming\Typora\typora-user-images\image-20230215081612382.png)
+
+###### ststic   静态变量修饰
+
+![image-20230215090153217](C:\Users\houqi\AppData\Roaming\Typora\typora-user-images\image-20230215090153217.png)
+
+
+
+###### extern 声明外部变量
+
+![image-20230215090805715](C:\Users\houqi\AppData\Roaming\Typora\typora-user-images\image-20230215090805715.png)
+
+![image-20230215092437570](C:\Users\houqi\AppData\Roaming\Typora\typora-user-images\image-20230215092437570.png)
+
+static 修饰的全局变量，使得这个全局变量只能在自己所在的源文件（.c）内部可以使用，其他源文件可以使  用！
+
+全局变量可以被其他源文件使用，是因为全局变量具有外部连接属性，但是被static修饰后，变成了内部连接属性，其他源文件不能连接到这个静态的全局变量了！
+
+
+
+
+
+###### define
+
+<img src="C:\Users\houqi\AppData\Roaming\Typora\typora-user-images\image-20230215094957250.png" alt="image-20230215094957250" style="zoom:150%;" />
+
+##### 指针
+
+###### 地址
+
+![image-20230215101030438](C:\Users\houqi\AppData\Roaming\Typora\typora-user-images\image-20230215101030438.png)
+
+
+
+解引用操作符 *
+
+![image-20230215110026935](C:\Users\houqi\AppData\Roaming\Typora\typora-user-images\image-20230215110026935.png)
+
+
+
+###### 指针变量的大小
+
+![image-20230215111241109](C:\Users\houqi\AppData\Roaming\Typora\typora-user-images\image-20230215111241109.png)
+
+
+
+
+
+结构体，及其指针
+
+![image-20230215112706036](C:\Users\houqi\AppData\Roaming\Typora\typora-user-images\image-20230215112706036.png)
